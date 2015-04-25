@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tool xmlns="http://www.pyz.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.pyz.com testtool.xsd"
+>
+	<database>
+		<dbname>testtool</dbname>
+		<username>root</username>
+		<password>root</password>
+	</database>
+	<document>
+		<table>com.pyz.testtool.entity.Student</table>
+		<columns>
+			<column>
+				<pos>0</pos>
+				<field>id</field>
+			</column>
+			<column>
+				<pos>1</pos>
+				<field>name</field>
+			</column>
+			<column>
+				<pos>2</pos>
+				<field>sex</field>
+			</column>	
+		</columns>
+	</document>
+	<cache>
+		<count>5</count>
+	</cache>
+</tool>

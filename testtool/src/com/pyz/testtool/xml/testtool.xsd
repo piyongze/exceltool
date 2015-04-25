@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.pyz.com" 
+xmlns="http://www.pyz.com" 
+elementFormDefault="qualified">
+<xs:element name="tool">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="document" maxOccurs="5">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="table" type="xs:string" maxOccurs="1"/>
+						<xs:element name="columns" maxOccurs="1">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="column" maxOccurs="10">
+										<xs:complexType>
+											<xs:all>
+												<xs:element name="pos" type="xs:int" maxOccurs="1"/>
+												<xs:element name="field" type="xs:string" maxOccurs="1"/>
+											</xs:all>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="cache">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="count" type="xs:int"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="database">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="dbname" type="xs:string"/>
+						<xs:element name="username" type="xs:string"/>
+						<xs:element name="password" type="xs:string"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
